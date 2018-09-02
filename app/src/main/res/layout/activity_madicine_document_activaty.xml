@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
-            android:hint="Doctor Name"
+            android:hint="Doctor Spinner"
             android:textColor="@color/colorPrimary"/>
         <EditText
             android:id="@+id/et_DocumentDetails"
