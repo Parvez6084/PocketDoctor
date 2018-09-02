@@ -19,6 +19,9 @@ public class DoctorProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_profile);
 
+        int  pesId= getIntent().getIntExtra("id",0);
+
+
         tvdoctorName =findViewById(R.id.tv_doctor_profile_name);
         tvdoctorEmail =findViewById(R.id.tv_doctor_profile_Email);
         tvdoctorPhoneNo =findViewById(R.id.tv_doctor_profile_Phone);
