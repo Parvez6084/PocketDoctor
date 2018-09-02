@@ -39,7 +39,10 @@ public class MedisinlistviewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent =new Intent(MedisinlistviewActivity.this, MedicinViewActivity.class);
-                intent.putExtra("medisine",mlistView.getItemAtPosition(position).toString());
+                intent.putExtra("id",position+1);
+
+
+
                 startActivity(intent);
 
             }
