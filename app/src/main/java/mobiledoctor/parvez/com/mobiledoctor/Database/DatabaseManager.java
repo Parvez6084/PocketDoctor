@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 
 import mobiledoctor.parvez.com.mobiledoctor.DoctorClass.DoctorPojoclass;
+import mobiledoctor.parvez.com.mobiledoctor.MedisineClass.MedisinePojoclass;
 
 public class DatabaseManager {
 
@@ -106,6 +107,28 @@ public class DatabaseManager {
     }
 
 
+
+    /////////////////////////////
+   /* public MedisinePojoclass getMedicineById(int id){
+
+        sqLiteDatabase = medicineDatabaseHelper.getReadableDatabase();
+        MedisinePojoclass medisinePojoclass = null;
+        Cursor cursor = sqLiteDatabase.query(MedicineDatabaseHelper.TABLE_NAME,
+                null,MedicineDatabaseHelper.KEY_ID+"="+id,null,null,null,null);
+        if(cursor != null || cursor.getCount() > 0){
+            cursor.moveToFirst();
+            int eid = cursor.getInt(cursor.getColumnIndex(MedicineDatabaseHelper.KEY_ID));
+            //  String dimage= cursor.getString(cursor.getColumnIndex(MedicineDatabaseHelper.KEY_IMAGE));
+            String dName= cursor.getString(cursor.getColumnIndex(MedicineDatabaseHelper.KEY_DOCTOR_NAME));
+            String details = cursor.getString(cursor.getColumnIndex(MedicineDatabaseHelper.KEY_DETAILS));
+            String visiteDate = cursor.getString(cursor.getColumnIndex(MedicineDatabaseHelper.KEY_VISIT_DATE));
+
+            medisinePojoclass = new MedisinePojoclass(id,dName,details,visiteDate);
+
+        }
+        medicineDatabaseHelper.close();
+        return medisinePojoclass;
+    }*/
 
 
 
