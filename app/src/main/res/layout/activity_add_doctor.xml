@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorClass.AddDoctorActivity"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_layout_model"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/et_DoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Doctor Name"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/et_DoctorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textEmailAddress"
+            android:hint="Doctor E-mail"/>
+
+
+        <EditText
+            android:id="@+id/et_DoctorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Phone Number"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_layout_model"
+        android:padding="5dp">
+
+
+    <EditText
+        android:id="@+id/et_Appoint_Date"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Appoint Date"
+        android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btn_calendar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_calendar_icon"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_layout_model"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/et_Details"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textMultiLine"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Details"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Save"
+            android:textColor="#ffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_buttone_model2"/>
+        <Button
+            android:id="@+id/btn_Reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/ic_buttone_model1"/>
+
+    </LinearLayout>
+
+    </LinearLayout>

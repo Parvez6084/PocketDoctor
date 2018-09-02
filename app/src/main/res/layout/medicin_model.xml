@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#e4e3e3">
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="95dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <RelativeLayout
+        android:id="@+id/medicin_view_model"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/ic_layout_model"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/tv_visiteDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_visiteDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_visiteDoctorName"
+            android:text="Details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_visiteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_visiteDetails"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

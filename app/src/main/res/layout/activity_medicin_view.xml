@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedisineClass.MedicinViewActivity">
+
+
+
+    <ImageView
+        android:id="@+id/img_Doctor_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/btn_medisine_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginTop="61dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_edit_icon"
+        android:background="@drawable/ic_buttone_model2"
+        android:text="Edit"
+        android:textColor="#ffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_Doctor_photo"
+        android:background="@drawable/ic_layout_model"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tv_doctor_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Name"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_user_icon"/>
+        <TextView
+            android:id="@+id/tv_doctor_profile_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    Details"
+            android:layout_below="@+id/tv_doctor_profile_name"
+            android:drawableLeft="@drawable/ic_details_icon"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_doctor_profile_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Date"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/tv_doctor_profile_Details"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/ic_calendar_icon"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
